@@ -1,0 +1,16 @@
+% Handy notepad to keep track of useful timestamps for each data set.
+
+ExperimentData.mat:
+% 2Hz and 1Hz segments
+start_2Hz = 24.00;
+end_2Hz = 84.00;
+start_1Hz = 90.00;
+end_1Hz = 124.00;
+
+ExperimentData20220503.mat:
+% 2Hz and 1Hz segments
+start_2Hz = 42.00;
+end_2Hz = 85.00;
+start_1Hz = 90.00;
+end_1Hz = 124.00;
+

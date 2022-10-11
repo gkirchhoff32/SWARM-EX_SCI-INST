@@ -12,8 +12,8 @@ close all; clear all; clearvar; clc; format longEng;
 % 
 %% Load data
 
-dir = 'C:\Users\Grant\OneDrive - UCB-O365\Grad Projects\FIPEX Tests\fipex\data\Igor Tests\';
-filename = '220830_source-meter_no01_Uref-300mV_RH-311Ohms_fixed-10mA_oxygen_2Hz-Laser.csv';
+dir = 'C:\Users\jason\OneDrive - UCB-O365\Grad Projects\FIPEX Tests\fipex\data\Igor Tests\';
+filename = '220831_source-meter_no13_NO_SENSOR_300mV-2-wire_fixed-10mA_O2_Laser_2Hz-Laser.csv';
 S = importfile(append(dir, filename));
 
 
@@ -32,6 +32,6 @@ plot(t, I)
 xlabel('time [s]')
 ylabel('current [nA]')
 title('Sourcemeter Data - Sensor REMOVED')
-subtitle('Argon Beam')
+% subtitle('Argon Beam')
 legend('URef=300mV, RH=NONE')
 

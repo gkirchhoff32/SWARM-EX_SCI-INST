@@ -18,6 +18,7 @@ functions adhere to INST guidelines for flight operations and are adaptable in C
 import numpy as np
 import pyvisa as visa
 
-rm = visa.ResourceManager('@py')
+rm = visa.ResourceManager()
 rm.list_resources()
+
 

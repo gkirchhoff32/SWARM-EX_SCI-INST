@@ -118,6 +118,12 @@ class FIPEXSensor:
         response = self.ser.read(response_num_byte)
         return response.decode()
 
+    # TODO: Test read function
+    def read(self, encoding='utf-8'):
+        response_num_byte = self.ser.write(bytearray('R', encoding=encoding))
+        response = self.ser.read(response_num_byte)
+        return response.decode()
+
 
 if __name__ == '__main__':
     fipex = FIPEXSensor()

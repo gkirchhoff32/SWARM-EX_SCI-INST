@@ -52,7 +52,7 @@ class FIPEXSensor:
         response = self.ser.read(response_num_byte)
         return response.decode()
 
-    def heater_resistance(self, sensor=1, resistance='150.0', encoding='utf-8'):
+    def set_heater_resistance(self, sensor=1, resistance='150.0', encoding='utf-8'):
         """
         Define heater resistance.
         :param sensor: (int) Sensor number (1 or 2)
@@ -72,7 +72,7 @@ class FIPEXSensor:
         response = self.ser.read(response_num_byte)
         return response.decode()
 
-    def heater_resistance_FRAM(self, sensor=1, resistance='1500', encoding='utf-8'):
+    def set_heater_resistance_FRAM(self, sensor=1, resistance='1500', encoding='utf-8'):
         """
         Define heater resistance and store the value in FRAM for next heatup.
         :param sensor: (int) Sensor number (1 or 2)
@@ -92,7 +92,7 @@ class FIPEXSensor:
         response = self.ser.read(response_num_byte)
         return response.decode()
 
-    def reference_voltage(self, sensor=1, voltage='300', encoding='utf-8'):
+    def set_reference_voltage(self, sensor=1, voltage='300', encoding='utf-8'):
         """
         Define reference voltage value. Reference voltage regulated by anode voltage.
         :param sensor: (int) Sensor number (1 or 2)

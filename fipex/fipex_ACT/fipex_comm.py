@@ -29,7 +29,7 @@ class FIPEXSensor:
 
         self.ser = serial.Serial(port=self.port, baudrate=self.baudrate, timeout=self.timeout, xonxoff=self.xonxoff,
                                  parity=self.parity, bytesize=self.bytesize)
-
+        
         if self.ser.is_open:
             print('Serial port open from previous session. Closing...')
             self.close()
